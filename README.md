@@ -19,3 +19,15 @@ border yaratmak icin:
   }
 </style>
 ```
+yan yana resim eklemek:
+
+ ```<div class="row">
+      <div class="col-sm-6">
+    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="Newspaper website" id="cerceve">
+      </div>
+      <div class="col-sm-6">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150" alt="Magazine Website" id="cerceve">
+      </div>
+    </div>
+    ```
+
