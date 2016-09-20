@@ -30,8 +30,11 @@ yan yana resim eklemek:
       </div>
     </div>
     ```
-Switch statement
-'''  switch(val) {
+## Javascript
+  
+Switch statement:
+'''  
+switch(val) {
         case 1:
         case 2:
         case 3:
@@ -39,4 +42,5 @@ Switch statement
           break;
         case 4:
           result = "4 alone";
+          }
     ''''
