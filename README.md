@@ -95,7 +95,7 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
     {
       collection[id][prop]=value;
     }
-  else if (prop=="tracks" && collection[id].hasOwnProperty(prop)==0)
+   else if (prop=="tracks" && collection[id].hasOwnProperty(prop)==0)
     {
       var erey=[];
       erey.push(value);
