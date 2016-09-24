@@ -103,14 +103,14 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
      
       
     }
-  else if (prop == "tracks" && value!="") {
+   else if (prop == "tracks" && value!="") {
     collection[id].tracks.push(value);
-  }
-  else if ( value== "") {
-   delete collection[id][prop];
-    }
+   }
+   else if ( value== "") {
+     delete collection[id][prop];
+      }
   
-    return collection;
+      return collection;
     }
 
 ##for loops yall:
