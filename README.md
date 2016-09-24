@@ -44,7 +44,7 @@ switch(val) {
           result = "4 alone";
           }
     ''''
-    ##objects and array edition
+##objects and array edition
     Write a function which takes an album's id (like 2548), a property prop (like "artist" or "tracks"), and a value (like "Addicted to Love") to modify the data in this collection.
 
 If prop isn't "tracks" and value isn't empty (""), update or set the value for that record album's property.
@@ -63,6 +63,32 @@ Use bracket notation when accessing object properties with variables.
 Push is an array method you can read about on Mozilla Developer Network.
 
 You may refer back to Manipulating Complex Objects Introducing JavaScript Object Notation (JSON) for a refresher.
+    
+    var collection = {
+    "2548": {
+      "album": "Slippery When Wet",
+      "artist": "Bon Jovi",
+      "tracks": [ 
+        "Let It Rock", 
+        "You Give Love a Bad Name" 
+      ]
+    },
+    "2468": {
+      "album": "1999",
+      "artist": "Prince",
+      "tracks": [ 
+        "1999", 
+        "Little Red Corvette" 
+      ]
+    },
+    "1245": {
+      "artist": "Robert Palmer",
+      "tracks": [ ]
+    },
+    "5439": {
+      "album": "ABBA Gold"
+    }
+};
     
     function updateRecords(id, prop, value) {
   if (prop!="tracks" && value!="")
