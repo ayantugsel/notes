@@ -88,7 +88,7 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
     "5439": {
       "album": "ABBA Gold"
     }
-};
+    };
     
     function updateRecords(id, prop, value) {
   if (prop!="tracks" && value!="")
@@ -108,10 +108,10 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
   }
   else if ( value== "") {
    delete collection[id][prop];
-  }
+    }
   
-  return collection;
-}
+    return collection;
+    }
 
 ##for loops yall:
 
