@@ -195,5 +195,5 @@ If both are true, then return the "value" of that property.
 
     var expression = /and/gi; 
  This code counts the matches of expression in testString
-    var andCount = testString.match(expression).length;
+     var andCount = testString.match(expression).length;
 
