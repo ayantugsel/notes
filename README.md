@@ -91,7 +91,7 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
     };
     
     function updateRecords(id, prop, value) {
-  if (prop!="tracks" && value!="")
+    if (prop!="tracks" && value!="")
     {
       collection[id][prop]=value;
     }
