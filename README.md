@@ -191,9 +191,16 @@ If both are true, then return the "value" of that property.
     return "No such contact";
     // Only change code above this line}
     }
-## Find expressions in strings:
+### Find expressions in strings:
 
     var expression = /and/gi; 
  This code counts the matches of expression in testString
      var andCount = testString.match(expression).length;
-
+#### to find digits
+''' 
+    /\d/g
+    Appending a plus sign (+) after the selector, e.g. /\d+/g, allows this regular expression to match one or more digits.
+    for white space: /\s+/g
+    Use /\S/g to count the number of non-whitespace characters in testString.
+    
+## Object Oriented and Functional Programming
