@@ -87,3 +87,13 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
   return collection;
 }
 
+##for loops yall:
+
+// Setup
+var myArray = [];
+
+// Only change code below this line.
+for (var i=1; i<6; i++) {
+  myArray.push(i);
+}
+
