@@ -191,4 +191,12 @@ If both are true, then return the "value" of that property.
     return "No such contact";
     // Only change code above this line}
     }
+## Find expressions in strings:
+
+    var expression = /and/gi;  // Change this Line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+    var andCount = testString.match(expression).length;
 
