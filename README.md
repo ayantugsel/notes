@@ -245,4 +245,50 @@ var timesFour = oldArray.map(function(val){
   return val * 4;
 });
 console.log(timesFour); // returns [4, 8, 12]'''
+###Condense arrays with reduce
+'''var singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal - currentVal;
+}, 0);'''
+
+or '''var array = [4,5,6,7,8];
+var singleVal = 0;
+
+// Only change code below this line.
+
+singleVal = array.reduce(function (previousVal, currentVal) {
+  return previousVal+currentVal;
+}, 0); //returns 30 '''
+### Filter arrays with filter:
+The following code is an example of using filter to remove array elements that are equal to five:
+
+'''array = array.filter(function(val) {
+  return val !== 5;
+}); //removes elements that are equal to 5.'''
+
+###Sort Arrays with sort
+Here is an example of using sort with a compare function that will sort the elements from smallest to largest number:
+'''var array = [1, 12, 21, 2];
+array.sort(function(a, b) {
+  return a - b;
+});'''
+from largest to smallest:
+'''var array = [1, 12, 21, 2];
+array.sort(function(a, b) {
+ return b-a; 
+});''' returns 21, 12,2,1
+###Reverse Arrays with reverse
+'''var myArray = [1, 2, 3];
+myArray.reverse(); '''
+### Concatanate 
+'''newArray = oldArray.concat(otherArray);'''
+
+###Splitting with split:
+Here is an example of split being used to split a string at every s character:
+'''var array = string.split('s');'''
+###Join Strings with join:
+ join each element of an array into a string separated by whatever delimiter you provide as an argument.
+ '''var veggies = ["Celery", "Radish", "Carrot", "Potato"];
+var salad = veggies.join(" and ");
+console.log(salad); // "Celery and Radish and Carrot and Potato" '''
+
 
