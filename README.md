@@ -291,4 +291,16 @@ Here is an example of split being used to split a string at every s character:
 var salad = veggies.join(" and ");
 console.log(salad); // "Celery and Radish and Carrot and Potato" '''
 
+##Factorial
 
+'''function factorialize(num) {
+  var i=1;
+  var count=1;
+  while (i<=num) {
+   
+    count=count*(i);
+    i++;
+  }
+  num=count;  
+  return num;
+}'''
