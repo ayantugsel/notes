@@ -204,3 +204,45 @@ If both are true, then return the "value" of that property.
     Use /\S/g to count the number of non-whitespace characters in testString.
     
 ## Object Oriented and Functional Programming
+constructor: create objects using constructor functions.
+''' var Car = function() {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 5;
+};
+'''In a constructor the this variable refers to the new object being created by the constructor.
+
+To use a constructor function we call it with the new keyword in front of it like:
+'''var myCar = new Car();'''
+myCar is now an instance of the Car constructor that looks like the object it described
+adding a propery:
+'''var myCar= new Car();
+myCar.nickname= "Oreo";'''
+### Making Object properties Private
+To do this, we create the variable inside the constructor using the var keyword instead of creating it as a property of this.
+'''
+var Car = function() {
+  // this is a private variable
+  var speed = 10;
+
+  // these are public methods
+  this.accelerate = function(change) {
+    speed += change;
+  };
+
+  this.decelerate = function() {
+    speed -= 5;
+  };
+
+  this.getSpeed = function() {
+    return speed;
+  };
+};'''
+
+###Iterate over Arrays with map
+'''var oldArray = [1, 2, 3];
+var timesFour = oldArray.map(function(val){
+  return val * 4;
+});
+console.log(timesFour); // returns [4, 8, 12]'''
+
