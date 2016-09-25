@@ -282,10 +282,10 @@ myArray.reverse(); '''
 ### Concatanate 
 '''newArray = oldArray.concat(otherArray);'''
 
-###Splitting with split:
+###Splitting with split (into an array)
 Here is an example of split being used to split a string at every s character:
 '''var array = string.split('s');'''
-###Join Strings with join:
+###Join Strings with join (each element of an array into a string):
  join each element of an array into a string separated by whatever delimiter you provide as an argument.
  '''var veggies = ["Celery", "Radish", "Carrot", "Potato"];
 var salad = veggies.join(" and ");
