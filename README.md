@@ -304,3 +304,7 @@ console.log(salad); // "Celery and Radish and Carrot and Potato" '''
   num=count;  
   return num;
 }'''
+##Remove Non-AlphaNumerics from a String:
+
+'''input.replace(/[^0-9a-z]/gi, ''); ''' removes underscores too
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
