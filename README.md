@@ -114,8 +114,6 @@ You may refer back to Manipulating Complex Objects Introducing JavaScript Object
     }
 
 ##for loops yall:
-
-// Setup
 var myArray = [];
 
 // Only change code below this line.
@@ -138,7 +136,7 @@ function multiplyAll(arr) {
   return product;
 }
 // Modify values below to test your code
-multiplyAll([[1,2],[3,4],[5,6,7]]);
+multiplyAll([[1,2],[3,4],[5,6,7]])
 ##  Look up profile 
 The function should check if firstName is an actual contact's firstName and the given property (prop) is a property of that contact.
 
@@ -308,3 +306,23 @@ console.log(salad); // "Celery and Radish and Carrot and Potato" '''
 
 '''input.replace(/[^0-9a-z]/gi, ''); ''' removes underscores too
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+
+###Title Case a Sentence:
+
+'''function titleCase(str) {
+  var lowString="";
+  lowString=str.toLowerCase();
+  var highString= "";
+  var arr=[];
+  arr=lowString.split(" ");
+  for (var i= 0; i<arr.length; i++) {
+   arr[i]= arr[i].substring(0,1).toUpperCase()+arr[i].substring(1);
+    
+  }
+  var newString= "";
+  newString = arr.join(" ");
+  return newString;
+}'''
+
+titleCase("I'm a little tea pot");
+
