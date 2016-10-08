@@ -326,3 +326,19 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 titleCase("I'm a little tea pot");
 
+##ChunkMonkey
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2) should return [[0, 1], [2, 3], [4, 5]].
+chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4) should return [[0, 1, 2, 3], [4, 5]]
+'''function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  var newArr=[];
+  var nArr=[];
+  var sArr=[];
+  for (i=0; i<arr.length; i=i+size) {
+    sArr= arr.slice(i, i+size);
+   newArr.push(sArr);
+  }
+  return newArr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2); '''
